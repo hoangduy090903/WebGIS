@@ -1,121 +1,112 @@
 [
   {
-    "Ký hiệu":"ĐS 647",
-    "Ten_geosite":"Vịnh Lam Đồng",
+    "Ký hiệu":"01",
+    "Ten_geosite":"Bãi đá 7 màu Cổ Thạch",
     "Kinh_do":"108.711",
     "Vi_do":"11.7146",
     "Kiểu GeoSite":"Phức hợp",
-    "Mô tả":"Bề biến tích tụ cuối sông dạng uốn",
-    "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"https://langchaixua.com/wp-content/uploads/2021/06/da-lat-7-mau-co-thach-4.jpg",
+    "Mô tả":"Bãi biển tích tụ cuội sỏi dạng túi, Cuội sỏi nhiều màu sắc và kích thước",
+    "Tiêu chí":"Tính hiếm",
+    "Hình ảnh":"https://vnn-imgs-a1.vgcloud.vn/img2.infonet.vn/w660/Uploaded/2020/drkxrreiox/2016_01_17/da_bay_mau.png",
     "Mã tỉnh":"68_LD"
   },
 
   {
-    "Ký hiệu":"Gần Sơn",
-    "Ten_geosite":"Lam Đồng",
+    "Ký hiệu":"02",
+    "Ten_geosite":"Gành Son",
     "Kinh_do":"108.622",
     "Vi_do":"11.1834",
     "Kiểu GeoSite":"Địa tầng",
-    "Mô tả":"Vách biển cổ lộ hệ tầng Phan Thiết",
-    "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"https://thumbs.dreamstime.com/b/ganh-son-beach-vietnam-sand-35881906.jpg",
+    "Mô tả":"Vách biển có hệ tầng Phan Thiết (cát đỏ) và hệ tầng Mũi Né (cát trắng xám)",
+    "Tiêu chí":"Tính hiếm",
+    "Hình ảnh":"https://thumbs.dreamstime.com/z/ganh-son-beach-vietnam-sand-35881906.jpg",
     "Mã tỉnh":"68_LD"
   },
 
   {
-    "Ký hiệu":"Bàu Trắng",
-    "Ten_geosite":"Lâm Đồng",
+    "Ký hiệu":"03",
+    "Ten_geosite":"Bàu Trắng",
     "Kinh_do":"108.416",
     "Vi_do":"11.0678",
     "Kiểu GeoSite":"Thủy văn",
-    "Mô tả":"Bàu nước ngọt lộ giữa đồi cát đỏ",
-    "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"",
+    "Mô tả":"Bàu nước ngọt giữa đồi cát di động, Hình thành liên quan đến dòng chảy ngầm và đứt gãy kiến tạo ở vùng cát
+",
+    "Tiêu chí":"Tính hiếm",
+    "Hình ảnh":"https://ik.imagekit.io/tvlk/blog/2024/07/du-lich-phan-thiet-10.jpg?tr=dpr-2,w-675",
     "Mã tỉnh":"68_LD"
   },
 
   {
-    "Ký hiệu":"Suối Tiên",
-    "Ten_geosite":"Lâm Đồng",
+    "Ký hiệu":"04",
+    "Ten_geosite":"Suối Tiên",
     "Kinh_do":"108.263",
     "Vi_do":"10.9566",
     "Kiểu GeoSite":"Địa tầng",
-    "Mô tả":"Suối Tiên độc đáo tạo bởi hệ tầng cát đỏ",
-    "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"",
+    "Mô tả":"Suối Tiên kéo dài gần 1 km, chảy theo ranh giới giữa đồi cát trắng xám phía đông  và dải cát đỏ đồi phía tây phủ lên cát trắng xám",
+    "Tiêu chí":"Tính hiếm",
+    "Hình ảnh":"https://static.vinwonders.com/production/suoi-hong-mui-ne-1.jpg",
     "Mã tỉnh":"68_LD"
   },
 
   {
-    "Ký hiệu":"Mũi Kê Gà",
-    "Ten_geosite":"Lâm Đồng",
+    "Ký hiệu":"05",
+    "Ten_geosite":"Mũi Kê Gà",
     "Kinh_do":"107.994",
     "Vi_do":"10.7006",
     "Kiểu GeoSite":"Kiến tạo",
-    "Mô tả":"Các đứt gãy kiến tạo tạo địa hình độc đáo",
-    "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"",
+    "Mô tả":"Các cột đá granite phức hệ Đèo Cả do sóng biển và các khe nứt phá hủy hình thành nên những hình dạng thú vị",
+    "Tiêu chí":"Tính hiếm",
+    "Hình ảnh":"https://cdn3.ivivu.com/2013/04/101.jpg",
     "Mã tỉnh":"68_LD"
   },
 
   {
-    "Ký hiệu":"Hải đăng",
-    "Ten_geosite":"Lâm Đồng",
+    "Ký hiệu":"06",
+    "Ten_geosite":"Hải Đăng Kê Ga",
     "Kinh_do":"107.992",
     "Vi_do":"10.6954",
     "Kiểu GeoSite":"Địa mạo",
-    "Mô tả":"Hải đăng cổ 4 mặt xây dựng năm 1898",
+    "Mô tả":"Hải đăng cao 41m, xây dựng từ năm 1898 trên đảo Kê Gà. Từ đây có thể quan sát các cảnh quan thú vị của mũi Kê Gà",
     "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"",
+    "Hình ảnh":"https://datviettour.com.vn/uploads/images/tin-tuc/danh-muc-tour-trong-nuoc/phan-thiet/kinh-nghiem-du-lich-mui-ke-ga.jpg",
     "Mã tỉnh":"68_LD"
   },
 
   {
-    "Ký hiệu":"Đá Phú Quý",
-    "Ten_geosite":"Lâm Đồng",
+    "Ký hiệu":"07",
+    "Ten_geosite":"Đảo Phú Quý",
     "Kinh_do":"108.943",
     "Vi_do":"10.5332",
     "Kiểu GeoSite":"Địa mạo",
-    "Mô tả":"Đá bazan dạng cột hình thành do hoạt động núi lửa",
-    "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"",
+    "Mô tả":"Đa dạng địa hình, núi lửa phun nổ, vách biển xâm thực, vịnh biển, mũi nhô, thềm biển, cầu thiên nhiên,…",
+    "Tiêu chí":"Tính hiếm",
+    "Hình ảnh":"https://toplist.vn/images/800px/dao-phu-quy-328842.jpg",
     "Mã tỉnh":"68_LD"
   },
 
   {
-    "Ký hiệu":"Cao nguyên",
-    "Ten_geosite":"Lâm Đồng",
+    "Ký hiệu":"08",
+    "Ten_geosite":"Cao Nguyên Cát Đỏ Phan Thiết",
     "Kinh_do":"108.295",
     "Vi_do":"10.9491",
     "Kiểu GeoSite":"Địa mạo",
-    "Mô tả":"Bề mặt cao nguyên lớn",
-    "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"",
+    "Mô tả":"Bề mặt cao nguyên rộng lớn, cấu tạo đồng nhất bởi cát mịn, tuổi Pleistocene muộn ",
+    "Tiêu chí":"Tính hiếm",
+    "Hình ảnh":"https://bizweb.dktcdn.net/100/006/093/files/doi-cat-do-2.jpg?v=1711768021719",
     "Mã tỉnh":"68_LD"
   },
 
   {
-    "Ký hiệu":"Hàm Rồng",
-    "Ten_geosite":"Lâm Đồng",
+    "Ký hiệu":"09",
+    "Ten_geosite":"Vinh Phan Thiết - Bãi biển Phan Thiết ",
     "Kinh_do":"108.93",
     "Vi_do":"10.5393",
     "Kiểu GeoSite":"Địa hình",
-    "Mô tả":"Hải đăng nằm trên núi lửa cổ",
+    "Mô tả":"Vịnh biển dạng vòng cung, hình thành do phá hủy và mài mòn các bờ tích tụ, cấu tạo bởi trầm tích Pleistocence",
     "Tiêu chí":"Tỉnh hiếm",
     "Hình ảnh":"",
     "Mã tỉnh":"68_LD"
   },
 
-  {
-    "Ký hiệu":"Vĩnh Hảo",
-    "Ten_geosite":"Lâm Đồng",
-    "Kinh_do":"108.115",
-    "Vi_do":"10.9222",
-    "Kiểu GeoSite":"Địa mạo",
-    "Mô tả":"Vịnh biển dạng vòng cung",
-    "Tiêu chí":"Tỉnh đa dạng",
-    "Hình ảnh":"",
-    "Mã tỉnh":"68_LD"
-  }
+
 ]
