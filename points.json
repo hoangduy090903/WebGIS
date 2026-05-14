@@ -1,110 +1,109 @@
 [
   {
-    "Ký hiệu":"01",
-    "Ten_geosite":"Bãi đá 7 màu Cổ Thạch",
-    "Kinh_do":"108.711",
-    "Vi_do":"11.7146",
-    "Kiểu GeoSite":"Phức hợp",
-    "Mô tả":"Bãi biển tích tụ cuội sỏi dạng túi, Cuội sỏi nhiều màu sắc và kích thước",
-    "Tiêu chí":"Tính hiếm",
-    "Hình ảnh":"https://vnn-imgs-a1.vgcloud.vn/img2.infonet.vn/w660/Uploaded/2020/drkxrreiox/2016_01_17/da_bay_mau.png",
-    "Mã tỉnh":"68_LD"
+    "ky_hieu":"01",
+    "ten_geosite":"Bãi đá 7 màu Cổ Thạch",
+    "kinh_do":"108.711",
+    "vi_do":"11.7146",
+    "kieu_geosite":"Phức hợp",
+    "mo_ta":"Bãi biển tích tụ cuội sỏi dạng túi, cuội sỏi nhiều màu sắc và kích thước",
+    "tieu_chi":"Tính hiếm",
+    "hinh_anh":"https://vnn-imgs-a1.vgcloud.vn/img2.infonet.vn/w660/Uploaded/2020/drkxrreiox/2016_01_17/da_bay_mau.png",
+    "ma_tinh":"68_LD"
   },
 
   {
-    "Ký hiệu":"02",
-    "Ten_geosite":"Gành Son",
-    "Kinh_do":"108.622",
-    "Vi_do":"11.1834",
-    "Kiểu GeoSite":"Địa tầng",
-    "Mô tả":"Vách biển có hệ tầng Phan Thiết (cát đỏ) và hệ tầng Mũi Né (cát trắng xám)",
-    "Tiêu chí":"Tính hiếm",
-    "Hình ảnh":"https://thumbs.dreamstime.com/z/ganh-son-beach-vietnam-sand-35881906.jpg",
-    "Mã tỉnh":"68_LD"
+    "ky_hieu":"02",
+    "ten_geosite":"Gành Son",
+    "kinh_do":"108.622",
+    "vi_do":"11.1834",
+    "kieu_geosite":"Địa tầng",
+    "mo_ta":"Vách biển có hệ tầng Phan Thiết (cát đỏ) và hệ tầng Mũi Né (cát trắng xám)",
+    "tieu_chi":"Tính hiếm",
+    "hinh_anh":"https://thumbs.dreamstime.com/z/ganh-son-beach-vietnam-sand-35881906.jpg",
+    "ma_tinh":"68_LD"
   },
 
   {
-    "Ký hiệu":"03",
-    "Ten_geosite":"Bàu Trắng",
-    "Kinh_do":"108.416",
-    "Vi_do":"11.0678",
-    "Kiểu GeoSite":"Thủy văn",
-    "Mô tả":"Bàu nước ngọt giữa đồi cát di động, Hình thành liên quan đến dòng chảy ngầm và đứt gãy kiến tạo ở vùng cát
-",
-    "Tiêu chí":"Tính hiếm",
-    "Hình ảnh":"https://ik.imagekit.io/tvlk/blog/2024/07/du-lich-phan-thiet-10.jpg?tr=dpr-2,w-675",
-    "Mã tỉnh":"68_LD"
+    "ky_hieu":"03",
+    "ten_geosite":"Bàu Trắng",
+    "kinh_do":"108.416",
+    "vi_do":"11.0678",
+    "kieu_geosite":"Thủy văn",
+    "mo_ta":"Bàu nước ngọt giữa đồi cát di động",
+    "tieu_chi":"Tính hiếm",
+    "hinh_anh":"https://ik.imagekit.io/tvlk/blog/2024/07/du-lich-phan-thiet-10.jpg?tr=dpr-2,w-675",
+    "ma_tinh":"68_LD"
   },
 
   {
-    "Ký hiệu":"04",
-    "Ten_geosite":"Suối Tiên",
-    "Kinh_do":"108.263",
-    "Vi_do":"10.9566",
-    "Kiểu GeoSite":"Địa tầng",
-    "Mô tả":"Suối Tiên kéo dài gần 1 km, chảy theo ranh giới giữa đồi cát trắng xám phía đông  và dải cát đỏ đồi phía tây phủ lên cát trắng xám",
-    "Tiêu chí":"Tính hiếm",
-    "Hình ảnh":"https://static.vinwonders.com/production/suoi-hong-mui-ne-1.jpg",
-    "Mã tỉnh":"68_LD"
+    "ky_hieu":"04",
+    "ten_geosite":"Suối Tiên",
+    "kinh_do":"108.263",
+    "vi_do":"10.9566",
+    "kieu_geosite":"Địa tầng",
+    "mo_ta":"Suối Tiên kéo dài gần 1 km",
+    "tieu_chi":"Tính hiếm",
+    "hinh_anh":"https://static.vinwonders.com/production/suoi-hong-mui-ne-1.jpg",
+    "ma_tinh":"68_LD"
   },
 
   {
-    "Ký hiệu":"05",
-    "Ten_geosite":"Mũi Kê Gà",
-    "Kinh_do":"107.994",
-    "Vi_do":"10.7006",
-    "Kiểu GeoSite":"Kiến tạo",
-    "Mô tả":"Các cột đá granite phức hệ Đèo Cả do sóng biển và các khe nứt phá hủy hình thành nên những hình dạng thú vị",
-    "Tiêu chí":"Tính hiếm",
-    "Hình ảnh":"https://cdn3.ivivu.com/2013/04/101.jpg",
-    "Mã tỉnh":"68_LD"
+    "ky_hieu":"05",
+    "ten_geosite":"Mũi Kê Gà",
+    "kinh_do":"107.994",
+    "vi_do":"10.7006",
+    "kieu_geosite":"Kiến tạo",
+    "mo_ta":"Các cột đá granite do sóng biển và khe nứt phá hủy",
+    "tieu_chi":"Tính hiếm",
+    "hinh_anh":"https://cdn3.ivivu.com/2013/04/101.jpg",
+    "ma_tinh":"68_LD"
   },
 
   {
-    "Ký hiệu":"06",
-    "Ten_geosite":"Hải Đăng Kê Ga",
-    "Kinh_do":"107.992",
-    "Vi_do":"10.6954",
-    "Kiểu GeoSite":"Địa mạo",
-    "Mô tả":"Hải đăng cao 41m, xây dựng từ năm 1898 trên đảo Kê Gà. Từ đây có thể quan sát các cảnh quan thú vị của mũi Kê Gà",
-    "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"https://datviettour.com.vn/uploads/images/tin-tuc/danh-muc-tour-trong-nuoc/phan-thiet/kinh-nghiem-du-lich-mui-ke-ga.jpg",
-    "Mã tỉnh":"68_LD"
+    "ky_hieu":"06",
+    "ten_geosite":"Hải Đăng Kê Gà",
+    "kinh_do":"107.992",
+    "vi_do":"10.6954",
+    "kieu_geosite":"Địa mạo",
+    "mo_ta":"Hải đăng xây dựng từ năm 1898 trên đảo Kê Gà",
+    "tieu_chi":"Tính hiếm",
+    "hinh_anh":"https://datviettour.com.vn/uploads/images/tin-tuc/danh-muc-tour-trong-nuoc/phan-thiet/kinh-nghiem-du-lich-mui-ke-ga.jpg",
+    "ma_tinh":"68_LD"
   },
 
   {
-    "Ký hiệu":"07",
-    "Ten_geosite":"Đảo Phú Quý",
-    "Kinh_do":"108.943",
-    "Vi_do":"10.5332",
-    "Kiểu GeoSite":"Địa mạo",
-    "Mô tả":"Đa dạng địa hình, núi lửa phun nổ, vách biển xâm thực, vịnh biển, mũi nhô, thềm biển, cầu thiên nhiên,…",
-    "Tiêu chí":"Tính hiếm",
-    "Hình ảnh":"https://toplist.vn/images/800px/dao-phu-quy-328842.jpg",
-    "Mã tỉnh":"68_LD"
+    "ky_hieu":"07",
+    "ten_geosite":"Đảo Phú Quý",
+    "kinh_do":"108.943",
+    "vi_do":"10.5332",
+    "kieu_geosite":"Địa mạo",
+    "mo_ta":"Địa hình núi lửa, vách biển xâm thực và thềm biển",
+    "tieu_chi":"Tính hiếm",
+    "hinh_anh":"https://toplist.vn/images/800px/dao-phu-quy-328842.jpg",
+    "ma_tinh":"68_LD"
   },
 
   {
-    "Ký hiệu":"08",
-    "Ten_geosite":"Cao Nguyên Cát Đỏ Phan Thiết",
-    "Kinh_do":"108.295",
-    "Vi_do":"10.9491",
-    "Kiểu GeoSite":"Địa mạo",
-    "Mô tả":"Bề mặt cao nguyên rộng lớn, cấu tạo đồng nhất bởi cát mịn, tuổi Pleistocene muộn ",
-    "Tiêu chí":"Tính hiếm",
-    "Hình ảnh":"https://bizweb.dktcdn.net/100/006/093/files/doi-cat-do-2.jpg?v=1711768021719",
-    "Mã tỉnh":"68_LD"
+    "ky_hieu":"08",
+    "ten_geosite":"Cao Nguyên Cát Đỏ Phan Thiết",
+    "kinh_do":"108.295",
+    "vi_do":"10.9491",
+    "kieu_geosite":"Địa mạo",
+    "mo_ta":"Bề mặt cao nguyên rộng lớn cấu tạo bởi cát mịn",
+    "tieu_chi":"Tính hiếm",
+    "hinh_anh":"https://bizweb.dktcdn.net/100/006/093/files/doi-cat-do-2.jpg?v=1711768021719",
+    "ma_tinh":"68_LD"
   },
 
   {
-    "Ký hiệu":"09",
-    "Ten_geosite":"Vinh Phan Thiết - Bãi biển Phan Thiết ",
-    "Kinh_do":"108.93",
-    "Vi_do":"10.5393",
-    "Kiểu GeoSite":"Địa hình",
-    "Mô tả":"Vịnh biển dạng vòng cung, hình thành do phá hủy và mài mòn các bờ tích tụ, cấu tạo bởi trầm tích Pleistocence",
-    "Tiêu chí":"Tỉnh hiếm",
-    "Hình ảnh":"",
-    "Mã tỉnh":"68_LD"
-  },
+    "ky_hieu":"09",
+    "ten_geosite":"Vịnh Phan Thiết",
+    "kinh_do":"108.93",
+    "vi_do":"10.5393",
+    "kieu_geosite":"Địa hình",
+    "mo_ta":"Vịnh biển dạng vòng cung hình thành do mài mòn",
+    "tieu_chi":"Tính hiếm",
+    "hinh_anh":"https://upload.wikimedia.org/wikipedia/commons/0/0b/Phan_Thiet_beach.jpg",
+    "ma_tinh":"68_LD"
+  }
 ]
