@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        Hệ thống thông tin địa lý các điểm địa di sản ở Việt Nam
+    </title>
+
+    <!-- ArcGIS -->
+
+    <link rel="stylesheet"
+        href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
+
+    <script src="https://js.arcgis.com/4.31/"></script>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background:#f4f4f9;
+            overflow:hidden;
+        }
+
+        #landing-page{
+
+            position:fixed;
+            top:0;
+            left:0;
+
+            width:100%;
+            height:100vh;
+
+            overflow:auto;
+
+            z-index:99999;
+
+            background:white;
+
+        }
+
+        .hero{
+
+            width:100%;
+            height:100vh;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.5),
+                    rgba(0,0,0,0.5)
+                ),
+                url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            text-align:center;
+
+            color:white;
+
+            padding:20px;
+
+        }
+
+        .hero-content h1{
+
+            font-size:70px;
+            margin-bottom:20px;
+
+        }
+
+        .hero-content p{
+
+            font-size:22px;
+            max-width:800px;
+            line-height:1.6;
+
+        }
+
+        .btn-start{
+
+            margin-top:30px;
+
+            padding:15px 35px;
+
+            background:#00c853;
+
+            color:white;
+
+            border:none;
+
+            border-radius:10px;
+
+            font-size:20px;
+
+            cursor:pointer;
+
+            transition:0.3s;
+
+        }
+
+        .btn-start:hover{
+
+            background:#009624;
+            transform:scale(1.05);
+
+        }
+
+        .intro{
+
+            padding:80px 10%;
+            background:#f4f4f4;
+
+        }
+
+        .intro h2{
+
+            text-align:center;
+            margin-bottom:40px;
+            font-size:40px;
+            color:#333;
+
+        }
+
+        .cards{
+
+            display:grid;
+
+            grid-template-columns:
+                repeat(auto-fit,minmax(250px,1fr));
+
+            gap:25px;
+
+        }
+
+        .card{
+
+            background:white;
+
+            padding:30px;
+
+            border-radius:15px;
+
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+        }
+
+        .card h3{
+
+            margin-bottom:15px;
+            color:#0078d4;
+
+        }
+
+        .card p{
+
+            line-height:1.6;
+            color:#555;
+
+        }
+
+        header{
+
+            background:#0078d4;
+
+            color:white;
+
+            padding:1rem;
+
+            text-align:center;
+
+            font-size:1.5rem;
+
+            font-weight:bold;
+
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+
+        }
+
+        nav{
+
+            background:#333;
+
+            padding:0.5rem;
+
+            display:flex;
+
+            justify-content:center;
+
+            gap:1rem;
+
+        }
+
+        nav button{
+
+            background:#0078d4;
+
+            color:white;
+
+            border:none;
+
+            padding:0.5rem 1rem;
+
+            border-radius:5px;
+
+            cursor:pointer;
+
+            transition:0.3s;
+
+        }
+
+        nav button:hover{
+
+            background:#005bb5;
+
+        }
+
+        .container{
+
+            display:flex;
+
+            height:calc(100vh - 145px);
+
+        }
+
+        .sidebar{
+
+            width:300px;
+
+            background:white;
+
+            padding:1rem;
+
+            box-shadow:2px 0 5px rgba(0,0,0,0.1);
+
+            overflow-y:auto;
+
+        }
+
+        .sidebar h2{
+
+            font-size:1.2rem;
+
+            margin-bottom:1rem;
+
+            color:#0078d4;
+
+        }
+
+        .sidebar ul{
+
+            list-style:none;
+
+        }
+
+        .sidebar ul li{
+
+            padding:0.5rem;
+
+            border-bottom:1px solid #eee;
+
+            cursor:pointer;
+
+            transition:0.3s;
+
+        }
+
+        .sidebar ul li:hover{
+
+            background:#f0f0f0;
+
+        }
+
+        #viewDiv{
+
+            flex:1;
+
+            height:100%;
+
+        }
+
+        footer{
+
+            background:#333;
+
+            color:white;
+
+            text-align:center;
+
+            padding:0.5rem;
+
+            font-size:0.9rem;
+
+            position:fixed;
+
+            bottom:0;
+
+            width:100%;
+
+        }
+
+        footer a{
+
+            color:#ff6b6b;
+
+            text-decoration:none;
+
+            font-weight:bold;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="landing-page">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>WEBGIS ĐỊA DI SẢN</h1>
+
+                <p>
+
+                    Hệ thống thông tin địa lý hỗ trợ quản lý,
+                    hiển thị và tra cứu các điểm địa di sản
+                    tại Việt Nam.
+
+                </p>
+
+                <button class="btn-start"
+                    onclick="showMap()">
+
+                    Khám phá bản đồ
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <header>
+
+        Hệ thống thông tin địa lý các điểm địa di sản ở Việt Nam
+
+    </header>
+
+    <nav>
+
+        <button onclick="switchBasemap('streets-navigation-vector')">
+            Streets
+        </button>
+
+        <button onclick="switchBasemap('satellite')">
+            Satellite
+        </button>
+
+        <button onclick="switchBasemap('topo')">
+            Topography
+        </button>
+
+        <button onclick="switchBasemap('osm')">
+            Open Street Map
+        </button>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <h2>Điểm địa di sản</h2>
+
+            <ul id="stationList"></ul>
+
+        </div>
+
+        <div id="viewDiv"></div>
+
+    </div>
+
+    <footer>
+
+        Developed by
+
+        <a href="https://www.facebook.com/dy.ungou/"
+            target="_blank">
+
+            Ngô Viễn Hoàng Duy_21170078
+
+        </a>
+
+    </footer>
+
+    <script>
+
+        function showMap(){
+
+            document.getElementById(
+                "landing-page"
+            ).style.display = "none";
+
+        }
+
+        require([
+
+            "esri/Map",
+            "esri/views/MapView",
+            "esri/Graphic",
+            "esri/layers/GraphicsLayer",
+            "esri/layers/GeoJSONLayer"
+
+        ], (
+
+            Map,
+            MapView,
+            Graphic,
+            GraphicsLayer,
+            GeoJSONLayer
+
+        ) => {
+
+            const map = new Map({
+
+                basemap:
+                    "streets-navigation-vector"
+
+            });
+
+            const view = new MapView({
+
+                container:"viewDiv",
+
+                map:map,
+
+                zoom:5,
+
+                center:[106.308, 16.6455]
+
+            });
+
+            const graphicsLayer =
+                new GraphicsLayer();
+
+            map.add(graphicsLayer);
+
+            // =========================
+            // LOAD JSON DATA
+            // =========================
+
+            fetch("points.json")
+
+            .then(res => res.json())
+
+            .then(data => {
+
+                data.forEach((point,index)=>{
+
+                    // Sidebar
+
+                    const li =
+                        document.createElement("li");
+
+                    li.innerHTML =
+                        point.Ten_geosite;
+
+                    li.onclick = () => {
+
+                        zoomToStation(
+
+                            parseFloat(
+                                point.Kinh_do
+                            ),
+
+                            parseFloat(
+                                point.Vi_do
+                            )
+
+                        );
+
+                    };
+
+                    document
+                    .getElementById("stationList")
+                    .appendChild(li);
+
+                    // Marker color
+
+                    const colorList = [
+
+                        "#FF0000",
+                        "#00FF00",
+                        "#0000FF",
+                        "#FFFF00",
+                        "#FF00FF",
+                        "#00FFFF"
+
+                    ];
+
+                    const color =
+                        colorList[
+                            index % colorList.length
+                        ];
+
+                    // Marker
+
+                    const pointGraphic =
+                        new Graphic({
+
+                        geometry:{
+
+                            type:"point",
+
+                            longitude:
+                                parseFloat(point.Kinh_do),
+
+                            latitude:
+                                parseFloat(point.Vi_do)
+
+                        },
+
+                        symbol:{
+
+                            type:"simple-marker",
+
+                            color:color,
+
+                            size:"12px",
+
+                            outline:{
+                                color:"#000",
+                                width:1
+                            }
+
+                        },
+
+                        attributes:{
+
+                            name:
+                                point.Ten_geosite,
+
+                            kyHieu:
+                                point["Ký hiệu"],
+
+                            kinhDo:
+                                point.Kinh_do,
+
+                            viDo:
+                                point.Vi_do,
+
+                            kieuGeosite:
+                                point["Kiểu GeoSite"],
+
+                            moTa:
+                                point["Mô tả"],
+
+                            tieuChi:
+                                point["Tiêu chí"],
+
+                            hinhAnh:
+                                point["Hình ảnh"],
+
+                            provinces:
+                                point["Mã tỉnh"]
+
+                        },
+
+                        popupTemplate:{
+
+                            title:
+                                "{name} ({kyHieu})",
+
+                            content:`
+
+                            <div>
+
+                                <b>Kinh độ:</b>
+                                {kinhDo}<br>
+
+                                <b>Vĩ độ:</b>
+                                {viDo}<br>
+
+                                <b>Tỉnh:</b>
+                                {provinces}<br>
+
+                                <b>Kiểu GeoSite:</b>
+                                {kieuGeosite}<br>
+
+                                <b>Tiêu chí:</b>
+                                {tieuChi}<br>
+
+                                <b>Mô tả:</b>
+                                {moTa}
+
+                            </div>
+
+                            <br>
+
+                            <img
+                                src="{hinhAnh}"
+                                style="
+                                    width:100%;
+                                    border-radius:10px;
+                                "
+                            >
+
+                            `
+
+                        }
+
+                    });
+
+                    graphicsLayer.add(
+                        pointGraphic
+                    );
+
+                });
+
+            });
+
+            // =========================
+            // GEOJSON
+            // =========================
+
+            const geoJsonLayer =
+                new GeoJSONLayer({
+
+                url:
+                    "Việt Nam (tỉnh thành) - 34.geojson đã nén",
+
+                renderer:{
+
+                    type:"simple",
+
+                    symbol:{
+
+                        type:"simple-line",
+
+                        color:"red",
+
+                        width:0.5
+
+                    }
+
+                }
+
+            });
+
+            map.add(geoJsonLayer);
+
+            // =========================
+            // BASEMAP
+            // =========================
+
+            window.switchBasemap =
+                (basemapType)=>{
+
+                map.basemap = basemapType;
+
+            };
+
+            // =========================
+            // ZOOM
+            // =========================
+
+            window.zoomToStation =
+                (longitude, latitude)=>{
+
+                view.goTo({
+
+                    center:[longitude, latitude],
+
+                    zoom:10
+
+                });
+
+            };
+
+        });
+
+    </script>
+
+</body>
+</html>

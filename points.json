@@ -1,0 +1,121 @@
+[
+  {
+    "Ký hiệu":"ĐS 647",
+    "Ten_geosite":"Vịnh Lam Đồng",
+    "Kinh_do":"108.711",
+    "Vi_do":"11.7146",
+    "Kiểu GeoSite":"Phức hợp",
+    "Mô tả":"Bề biến tích tụ cuối sông dạng uốn",
+    "Tiêu chí":"Tỉnh hiếm",
+    "Hình ảnh":"https://langchaixua.com/wp-content/uploads/2021/06/da-lat-7-mau-co-thach-4.jpg",
+    "Mã tỉnh":"68_LD"
+  },
+
+  {
+    "Ký hiệu":"Gần Sơn",
+    "Ten_geosite":"Lam Đồng",
+    "Kinh_do":"108.622",
+    "Vi_do":"11.1834",
+    "Kiểu GeoSite":"Địa tầng",
+    "Mô tả":"Vách biển cổ lộ hệ tầng Phan Thiết",
+    "Tiêu chí":"Tỉnh hiếm",
+    "Hình ảnh":"https://thumbs.dreamstime.com/b/ganh-son-beach-vietnam-sand-35881906.jpg",
+    "Mã tỉnh":"68_LD"
+  },
+
+  {
+    "Ký hiệu":"Bàu Trắng",
+    "Ten_geosite":"Lâm Đồng",
+    "Kinh_do":"108.416",
+    "Vi_do":"11.0678",
+    "Kiểu GeoSite":"Thủy văn",
+    "Mô tả":"Bàu nước ngọt lộ giữa đồi cát đỏ",
+    "Tiêu chí":"Tỉnh hiếm",
+    "Hình ảnh":"",
+    "Mã tỉnh":"68_LD"
+  },
+
+  {
+    "Ký hiệu":"Suối Tiên",
+    "Ten_geosite":"Lâm Đồng",
+    "Kinh_do":"108.263",
+    "Vi_do":"10.9566",
+    "Kiểu GeoSite":"Địa tầng",
+    "Mô tả":"Suối Tiên độc đáo tạo bởi hệ tầng cát đỏ",
+    "Tiêu chí":"Tỉnh hiếm",
+    "Hình ảnh":"",
+    "Mã tỉnh":"68_LD"
+  },
+
+  {
+    "Ký hiệu":"Mũi Kê Gà",
+    "Ten_geosite":"Lâm Đồng",
+    "Kinh_do":"107.994",
+    "Vi_do":"10.7006",
+    "Kiểu GeoSite":"Kiến tạo",
+    "Mô tả":"Các đứt gãy kiến tạo tạo địa hình độc đáo",
+    "Tiêu chí":"Tỉnh hiếm",
+    "Hình ảnh":"",
+    "Mã tỉnh":"68_LD"
+  },
+
+  {
+    "Ký hiệu":"Hải đăng",
+    "Ten_geosite":"Lâm Đồng",
+    "Kinh_do":"107.992",
+    "Vi_do":"10.6954",
+    "Kiểu GeoSite":"Địa mạo",
+    "Mô tả":"Hải đăng cổ 4 mặt xây dựng năm 1898",
+    "Tiêu chí":"Tỉnh hiếm",
+    "Hình ảnh":"",
+    "Mã tỉnh":"68_LD"
+  },
+
+  {
+    "Ký hiệu":"Đá Phú Quý",
+    "Ten_geosite":"Lâm Đồng",
+    "Kinh_do":"108.943",
+    "Vi_do":"10.5332",
+    "Kiểu GeoSite":"Địa mạo",
+    "Mô tả":"Đá bazan dạng cột hình thành do hoạt động núi lửa",
+    "Tiêu chí":"Tỉnh hiếm",
+    "Hình ảnh":"",
+    "Mã tỉnh":"68_LD"
+  },
+
+  {
+    "Ký hiệu":"Cao nguyên",
+    "Ten_geosite":"Lâm Đồng",
+    "Kinh_do":"108.295",
+    "Vi_do":"10.9491",
+    "Kiểu GeoSite":"Địa mạo",
+    "Mô tả":"Bề mặt cao nguyên lớn",
+    "Tiêu chí":"Tỉnh hiếm",
+    "Hình ảnh":"",
+    "Mã tỉnh":"68_LD"
+  },
+
+  {
+    "Ký hiệu":"Hàm Rồng",
+    "Ten_geosite":"Lâm Đồng",
+    "Kinh_do":"108.93",
+    "Vi_do":"10.5393",
+    "Kiểu GeoSite":"Địa hình",
+    "Mô tả":"Hải đăng nằm trên núi lửa cổ",
+    "Tiêu chí":"Tỉnh hiếm",
+    "Hình ảnh":"",
+    "Mã tỉnh":"68_LD"
+  },
+
+  {
+    "Ký hiệu":"Vĩnh Hảo",
+    "Ten_geosite":"Lâm Đồng",
+    "Kinh_do":"108.115",
+    "Vi_do":"10.9222",
+    "Kiểu GeoSite":"Địa mạo",
+    "Mô tả":"Vịnh biển dạng vòng cung",
+    "Tiêu chí":"Tỉnh đa dạng",
+    "Hình ảnh":"",
+    "Mã tỉnh":"68_LD"
+  }
+]
