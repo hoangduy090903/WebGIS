@@ -3,10 +3,10 @@
 
 <head>
 
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
 
     <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+        content="width=device-width, initial-scale=1.0"/>
 
     <title>
         Hệ thống thông tin địa lý các điểm địa di sản ở Việt Nam
@@ -15,7 +15,7 @@
     <!-- ArcGIS -->
 
     <link rel="stylesheet"
-        href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
+        href="https://js.arcgis.com/4.31/esri/themes/light/main.css"/>
 
     <script src="https://js.arcgis.com/4.31/"></script>
 
@@ -32,6 +32,10 @@
             background:#f4f4f9;
             overflow:hidden;
         }
+
+        /* ========================= */
+        /* LANDING PAGE */
+        /* ========================= */
 
         #landing-page{
 
@@ -121,58 +125,9 @@
 
         }
 
-        .intro{
-
-            padding:80px 10%;
-            background:#f4f4f4;
-
-        }
-
-        .intro h2{
-
-            text-align:center;
-            margin-bottom:40px;
-            font-size:40px;
-            color:#333;
-
-        }
-
-        .cards{
-
-            display:grid;
-
-            grid-template-columns:
-                repeat(auto-fit,minmax(250px,1fr));
-
-            gap:25px;
-
-        }
-
-        .card{
-
-            background:white;
-
-            padding:30px;
-
-            border-radius:15px;
-
-            box-shadow:0 4px 10px rgba(0,0,0,0.1);
-
-        }
-
-        .card h3{
-
-            margin-bottom:15px;
-            color:#0078d4;
-
-        }
-
-        .card p{
-
-            line-height:1.6;
-            color:#555;
-
-        }
+        /* ========================= */
+        /* HEADER */
+        /* ========================= */
 
         header{
 
@@ -230,6 +185,40 @@
 
         }
 
+        /* ========================= */
+        /* TOGGLE BUTTON */
+        /* ========================= */
+
+        #toggleSidebar{
+
+            position:absolute;
+
+            top:130px;
+
+            left:10px;
+
+            z-index:9999;
+
+            background:#0078d4;
+
+            color:white;
+
+            border:none;
+
+            padding:10px 15px;
+
+            border-radius:8px;
+
+            cursor:pointer;
+
+            font-weight:bold;
+
+        }
+
+        /* ========================= */
+        /* MAP */
+        /* ========================= */
+
         .container{
 
             display:flex;
@@ -249,6 +238,14 @@
             box-shadow:2px 0 5px rgba(0,0,0,0.1);
 
             overflow-y:auto;
+
+            transition:0.3s;
+
+        }
+
+        .sidebar.hide{
+
+            display:none;
 
         }
 
@@ -270,7 +267,7 @@
 
         .sidebar ul li{
 
-            padding:0.5rem;
+            padding:0.7rem;
 
             border-bottom:1px solid #eee;
 
@@ -330,6 +327,10 @@
 
 <body>
 
+    <!-- ========================= -->
+    <!-- LANDING PAGE -->
+    <!-- ========================= -->
+
     <div id="landing-page">
 
         <section class="hero">
@@ -359,6 +360,10 @@
 
     </div>
 
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
     <header>
 
         Hệ thống thông tin địa lý các điểm địa di sản ở Việt Nam
@@ -380,10 +385,24 @@
         </button>
 
         <button onclick="switchBasemap('osm')">
-            Open Street Map
+            OpenStreetMap
         </button>
 
     </nav>
+
+    <!-- ========================= -->
+    <!-- SIDEBAR BUTTON -->
+    <!-- ========================= -->
+
+    <button id="toggleSidebar">
+
+        ☰ Danh sách địa di sản
+
+    </button>
+
+    <!-- ========================= -->
+    <!-- MAP -->
+    <!-- ========================= -->
 
     <div class="container">
 
@@ -414,6 +433,10 @@
 
     <script>
 
+        // =========================
+        // LANDING PAGE
+        // =========================
+
         function showMap(){
 
             document.getElementById(
@@ -421,6 +444,32 @@
             ).style.display = "none";
 
         }
+
+        // =========================
+        // TOGGLE SIDEBAR
+        // =========================
+
+        const toggleBtn =
+        document.getElementById(
+            "toggleSidebar"
+        );
+
+        const sidebar =
+        document.querySelector(
+            ".sidebar"
+        );
+
+        toggleBtn.onclick = () => {
+
+            sidebar.classList.toggle(
+                "hide"
+            );
+
+        };
+
+        // =========================
+        // ARCGIS
+        // =========================
 
         require([
 
@@ -439,6 +488,10 @@
             GeoJSONLayer
 
         ) => {
+
+            // =========================
+            // MAP
+            // =========================
 
             const map = new Map({
 
@@ -459,6 +512,10 @@
 
             });
 
+            // =========================
+            // GRAPHICS LAYER
+            // =========================
+
             const graphicsLayer =
                 new GraphicsLayer();
 
@@ -476,24 +533,26 @@
 
                 data.forEach((point,index)=>{
 
-                    // Sidebar
+                    // =========================
+                    // SIDEBAR
+                    // =========================
 
                     const li =
                         document.createElement("li");
 
                     li.innerHTML =
-                        point.Ten_geosite;
+                        point.ten_geosite;
 
                     li.onclick = () => {
 
                         zoomToStation(
 
                             parseFloat(
-                                point.Kinh_do
+                                point.kinh_do
                             ),
 
                             parseFloat(
-                                point.Vi_do
+                                point.vi_do
                             )
 
                         );
@@ -504,7 +563,9 @@
                     .getElementById("stationList")
                     .appendChild(li);
 
-                    // Marker color
+                    // =========================
+                    // MARKER COLOR
+                    // =========================
 
                     const colorList = [
 
@@ -522,7 +583,9 @@
                             index % colorList.length
                         ];
 
-                    // Marker
+                    // =========================
+                    // POINT GRAPHIC
+                    // =========================
 
                     const pointGraphic =
                         new Graphic({
@@ -532,10 +595,10 @@
                             type:"point",
 
                             longitude:
-                                parseFloat(point.Kinh_do),
+                                parseFloat(point.kinh_do),
 
                             latitude:
-                                parseFloat(point.Vi_do)
+                                parseFloat(point.vi_do)
 
                         },
 
@@ -557,31 +620,31 @@
                         attributes:{
 
                             name:
-                                point.Ten_geosite,
+                                point.ten_geosite,
 
                             kyHieu:
-                                point["Ký hiệu"],
+                                point.ky_hieu,
 
                             kinhDo:
-                                point.Kinh_do,
+                                point.kinh_do,
 
                             viDo:
-                                point.Vi_do,
+                                point.vi_do,
 
                             kieuGeosite:
-                                point["Kiểu GeoSite"],
+                                point.kieu_geosite,
 
                             moTa:
-                                point["Mô tả"],
+                                point.mo_ta,
 
                             tieuChi:
-                                point["Tiêu chí"],
+                                point.tieu_chi,
 
                             hinhAnh:
-                                point["Hình ảnh"],
+                                point.hinh_anh,
 
                             provinces:
-                                point["Mã tỉnh"]
+                                point.ma_tinh
 
                         },
 
@@ -636,6 +699,15 @@
 
                 });
 
+            })
+
+            .catch(error => {
+
+                console.log(
+                    "Lỗi JSON:",
+                    error
+                );
+
             });
 
             // =========================
@@ -646,7 +718,7 @@
                 new GeoJSONLayer({
 
                 url:
-                    "Việt Nam (tỉnh thành) - 34.geojson đã nén",
+                    "vietnam.geojson",
 
                 renderer:{
 
@@ -669,7 +741,7 @@
             map.add(geoJsonLayer);
 
             // =========================
-            // BASEMAP
+            // BASEMAP SWITCH
             // =========================
 
             window.switchBasemap =
