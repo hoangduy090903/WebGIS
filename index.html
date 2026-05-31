@@ -554,7 +554,7 @@
 
                         },
 
-                       attributes:{
+                       attributes: {
 
     name: point.Ten_geosite,
 
@@ -580,13 +580,16 @@
 
 },
 
-popupTemplate:{
+popupTemplate: {
 
-    title:"{name} ({kyHieu})",
+    title: "{name} ({kyHieu})",
 
-    content:`
+    content: `
 
-    <div>
+    <div style="
+        font-size:14px;
+        line-height:1.6;
+    ">
 
         <b>Tỉnh:</b> {tinh}<br>
 
@@ -601,6 +604,7 @@ popupTemplate:{
         <b>Giá trị geosite:</b> {giaTri}<br><br>
 
         <b>Mô tả:</b><br>
+
         {moTa}<br><br>
 
         <b>Nguồn ảnh:</b> {nguonAnh}
@@ -611,11 +615,13 @@ popupTemplate:{
 
     <img
         src="{hinhAnh}"
+        alt="{name}"
         style="
             width:100%;
             max-height:250px;
             object-fit:cover;
             border-radius:10px;
+            border:1px solid #ddd;
         "
     >
 
