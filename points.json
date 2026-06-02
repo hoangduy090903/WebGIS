@@ -103,21 +103,9 @@
   "Hình ảnh": "https://diamoitruong.com/wp-content/uploads/2019/04/cat-do-hoa-thang.jpg",
   "Nguồn ảnh": "Địa môi trường"
 },
+  
 {
-  "Ký hiệu": "09",
-  "Ten_geosite": "Vịnh Phan Thiết - Bãi biển Phan Thiết",
-  "Kinh_do": "108.930000",
-  "Vi_do": "10.539300",
-  "Tỉnh": "Lâm Đồng",
-  "Kiểu GeoSite": "Địa hình",
-  "Kiểu địa mạo": "Vịnh biển",
-  "Giá trị geosite": "Giá trị khoa học, giá trị cảnh quan thẩm mỹ, giá trị kinh tế - du lịch",
-  "Mô tả": "Vịnh biển dạng vòng cung hình thành do quá trình xâm thực và bồi tụ ven biển.",
-  "Hình ảnh": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Phan_Thiet_Beach.jpg",
-  "Nguồn ảnh": "Wikipedia"
-  },
-  {
-  "Ký hiệu":"10",
+  "Ký hiệu":"09",
   "Ten_geosite":"Cột cờ Lũng Cú",
   "Kinh_do":"105.31624052671847",
   "Vi_do":"23.36357857853368",
@@ -131,7 +119,7 @@
 },
 
 {
-  "Ký hiệu":"11",
+  "Ký hiệu":"10",
   "Ten_geosite":"Đèo Mã Pì Lèng",
   "Kinh_do":"105.44291961986298",
   "Vi_do":"23.223393276469338",
@@ -145,7 +133,7 @@
 },
 
 {
-  "Ký hiệu":"12",
+  "Ký hiệu":"11",
   "Ten_geosite":"Thác Bản Giốc",
   "Kinh_do":"106.72437289666064",
   "Vi_do":"22.854587940914936",
@@ -159,7 +147,7 @@
 },
 
 {
-  "Ký hiệu":"13",
+  "Ký hiệu":"12",
   "Ten_geosite":"Núi Mắt Thần",
   "Kinh_do":"106.31767193224178",
   "Vi_do":"22.77440790661371",
@@ -173,7 +161,7 @@
 },
 
 {
-  "Ký hiệu":"14",
+  "Ký hiệu":"13",
   "Ten_geosite":"Hang động núi lửa C7",
   "Kinh_do":"107.94492358956118",
   "Vi_do":"12.477943539892488",
@@ -187,7 +175,7 @@
 },
 
 {
-  "Ký hiệu":"15",
+  "Ký hiệu":"14",
   "Ten_geosite":"Cảnh quan hồ Tà Đùng",
   "Kinh_do":"107.92411520703115",
   "Vi_do":"11.838031221741735",
@@ -201,7 +189,7 @@
 },
 
 {
-  "Ký hiệu":"16",
+  "Ký hiệu":"15",
   "Ten_geosite":"Thế giới đầm hồ Na Dương",
   "Kinh_do":"106.96527904307975",
   "Vi_do":"21.68874554809044",
@@ -215,7 +203,7 @@
 },
 
 {
-  "Ký hiệu":"17",
+  "Ký hiệu":"16",
   "Ten_geosite":"Hang Thẩm Khuyên - Thẩm Hai",
   "Kinh_do":"106.41807",
   "Vi_do":"21.93124",
